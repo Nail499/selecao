@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    
+}
+.navicon{
+    font-size: 30px;
+    position: absolute;
+    right: 2rem;
+    display: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+#Home {
+    background-color: #EF6603;
+    padding: 5px 15px 7px;
+    border-radius: 50px;
+}
+
+nav ul li a{
+    padding: 5px 15px 7px;
+    border-radius: 50px;    
+}
+
+nav ul li a:hover {
+    background-color: #EF6603;
+    color: black;
+    transition: .3s;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 60px;
+    background-color: rgba(42, 44, 57, 0.9);
+    color: white;
+    width: 100%;
+    height: 80px;
+    position: relative;
+}
+
+nav h1 a {
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: white;
+}
+.s1{
+    background-color: rgba(42, 44, 57, 0.9);
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    gap: 50px;
+    padding:30px 0px;
+}
+.s1 h1{
+    font-size: 50px
+}
+.s1 p{
+    margin-left: 350px;
+    margin-right: 350px;
+}
+.s1 button{
+    background-color:transparent;
+    border-radius: 50px;
+    border:2px solid #EF6603;
+    color: white;
+    padding: 12px 32px;
+    font-size: 16px;
+}
+.s1 button:hover{
+    background-color: #EF6603;
+    transition: .2s;
+    cursor: pointer;
+}
+.s1-div{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 60px;
+    flex-direction: column;
+    
+    
+    
+}
+
+
+
+@media screen and (max-width: 768px) {
+    nav ul{
+        display: none;
+    }
+    .navicon{
+        display: block;
+    }
+    nav h1{
+        align-items: start;
+    }
+    .s1 h1{
+        font-size:20px;
+    }
+    .s1 p{
+        font-size: 15px;
+        margin:0;
+    }
+    
+}
